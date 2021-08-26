@@ -1,0 +1,25 @@
+INSERT INTO dbo.Users (name, maintitle, homehellointro, homeprofilepiclink, homeintro, homeexperienceintro, numskilllogos, projectsintro, projectsheadline,contactinstagramlink,contactvscolink,contactlinkedinlink,contactemaillink,contactgithublink,aboutnormal,aboutlight,aboutprofilepicdesc,aboutcasualnormal,altportfoliolink, resumeiframesrc, resumeiframeresourceurl, contactemail)
+VALUES (
+'Mohit Bhole',
+'Software Engineer',
+'I am Mohit',
+'profile_home.png',
+'I am studying MS in Computer Science at the University of Texas at Dallas and will graduate in Summer 2022 with a concentration in Intelligent Systems.',
+'Here are my skills and experiences. Check them out!',
+14,
+'Here are some of my projects',
+'My Projects',
+'https://www.instagram.com/moiiiiit/',
+'https://vsco.co/moiiiiit/gallery',
+'https://www.linkedin.com/in/mohitbhole/',
+'mailto:mohitbhole@outlook.com',
+'https://www.github.com/moiiiiit',
+'I am a Masters student studying Computer Science at the University of Texas at Dallas actively seeking full time jobs starting August 2022. I am an international student. My primary interests in the field of Computer Science are Machine Learning and Software Development. My passion for this has been very much aroused by hackathons and project experiences throughout college . I know JavaScript, Java, and Python and have a functional understanding of C#, HTML, Bash and GoLang. My technical and conceptual interests lie in web-development, app-development, and machine learning applications in everyday life.',
+'My college GPA is 3.8/4.0 and my undergraduate GPA was 3.8/4.0 at the same university.',
+'This is me in my graudation robe!',
+'In my free time, I enjoy Rock Climbing, playing Valorant, Volunteering with campus organizations, Hiking and Travelling. Feel free to connect with me and send a message. I will be very happy to talk!',
+'https://mohitbholeportfolio.web.app/',
+'https://onedrive.live.com/embed?cid=38128077D4A08E1D&resid=38128077D4A08E1D%211072&authkey=ACCnR7RrisBRyoQ&em=2',
+'width=\"476\" height=\"288\" frameborder=\"0\" scrolling=\"no\"',
+'mohitbhole@outlook.com'
+);
