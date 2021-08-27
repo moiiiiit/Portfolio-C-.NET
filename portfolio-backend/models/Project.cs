@@ -11,5 +11,6 @@ namespace portfolio_backend.models{
         [Required]
         public string description { get; set; }
         public string imglink { get; set; }
+        public int userid { get; set; }
     }
 }

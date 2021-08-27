@@ -51,7 +51,7 @@ namespace portfolio_backend.Migrations
                     timeperiod = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     bullet1 = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     bullet2 = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    userid = table.Column<int>(type: "int", nullable: true)
+                    userid = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -61,7 +61,7 @@ namespace portfolio_backend.Migrations
                         column: x => x.userid,
                         principalTable: "Users",
                         principalColumn: "userid",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -71,7 +71,7 @@ namespace portfolio_backend.Migrations
                     identifierid = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     identifiername = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    userid = table.Column<int>(type: "int", nullable: true)
+                    userid = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -81,7 +81,7 @@ namespace portfolio_backend.Migrations
                         column: x => x.userid,
                         principalTable: "Users",
                         principalColumn: "userid",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -96,7 +96,7 @@ namespace portfolio_backend.Migrations
                     projecturl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     imglink = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    userid = table.Column<int>(type: "int", nullable: true)
+                    userid = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -106,7 +106,7 @@ namespace portfolio_backend.Migrations
                         column: x => x.userid,
                         principalTable: "Users",
                         principalColumn: "userid",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

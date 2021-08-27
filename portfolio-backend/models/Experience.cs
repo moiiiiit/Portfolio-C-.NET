@@ -10,5 +10,6 @@ namespace portfolio_backend.models{
         public string timeperiod { get; set; }
         public string bullet1 { get; set; }
         public string bullet2 { get; set; }
+        public int userid { get; set; }
     }
 }

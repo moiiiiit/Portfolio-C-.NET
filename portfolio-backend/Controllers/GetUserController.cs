@@ -11,9 +11,9 @@ namespace portfolio_backend.Controllers{
         public GetUserController(PortfolioRepo repository){
             _repository = repository;
         } 
-        [HttpGet("{userid}")]
-        public ActionResult <SortedList<int, int>> GetUser(int userid){
-            return Ok(_repository.GetUser(userid));
+        [HttpGet("{name}")]
+        public ActionResult <SortedList<int, int>> GetUser(string name){
+            return Ok(_repository.GetUser(name));
         }
 
     }

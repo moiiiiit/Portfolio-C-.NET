@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-
+using System.Collections.Generic;
 namespace portfolio_backend.models
 {
     public class User
@@ -20,16 +20,16 @@ namespace portfolio_backend.models
         [Required]
         public int numskilllogos { get; set; }
         [Required]
-        public Experience[] experiences { get; set; }
+        public ICollection<Experience> experiences { get; set; }
         [Required]
-        public Identifier[] identifiers { get; set; }
+        public ICollection<Identifier> identifiers { get; set; }
         [Required]
 
         public string projectsheadline { get; set; }
         [Required]
         public string projectsintro { get; set; }
         [Required]
-        public Project[] projects { get; set; }
+        public ICollection<Project> projects { get; set; }
         [Required]
         public string resumeiframesrc { get; set; }
         public string resumeiframeresourceurl { get; set; }

@@ -7,5 +7,6 @@ namespace portfolio_backend.models
         public int identifierid { get; set; }
         [Required]
         public string identifiername { get; set; }
+        public int userid { get; set; }
     }
 }

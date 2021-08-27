@@ -5948,11 +5948,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mohit Bhole\\source\\repos\\portfolio-backend\\portfolio-backend.csproj",
+      "projectUniqueName": "D:\\Programming\\HHA-C#-NET-Angular\\Portfolio-C-.NET\\portfolio-backend\\portfolio-backend.csproj",
       "projectName": "portfolio-backend",
-      "projectPath": "C:\\Users\\Mohit Bhole\\source\\repos\\portfolio-backend\\portfolio-backend.csproj",
+      "projectPath": "D:\\Programming\\HHA-C#-NET-Angular\\Portfolio-C-.NET\\portfolio-backend\\portfolio-backend.csproj",
       "packagesPath": "C:\\Users\\Mohit Bhole\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mohit Bhole\\source\\repos\\portfolio-backend\\obj\\",
+      "outputPath": "D:\\Programming\\HHA-C#-NET-Angular\\Portfolio-C-.NET\\portfolio-backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mohit Bhole\\AppData\\Roaming\\NuGet\\NuGet.Config",

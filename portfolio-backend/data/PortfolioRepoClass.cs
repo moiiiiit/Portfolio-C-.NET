@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using portfolio_backend.models;
+using Microsoft.EntityFrameworkCore;
 
 namespace portfolio_backend.data
 {
@@ -22,9 +23,18 @@ namespace portfolio_backend.data
             return (mockery);
         }
 
-        public User GetUser(int userid)
+        public User GetUser(string name)
         {
-            return _context.Users.FirstOrDefault(p => p.userid==userid);
+            return _context.Users.FirstOrDefault(p => p.name==name);
+        }
+        public Project[] GetProjects(int userid){
+            return _context.Project.Where(x=> x.userid == userid).ToArray();
+        }
+        public Experience[] GetExperiences(int userid){
+            return _context.Experience.Where(x=> x.userid == userid).ToArray();
+        }
+        public Identifier[] GetIdentifiers(int userid){
+            return _context.Identifier.Where(x=> x.userid == userid).ToArray();
         }
     }
 }

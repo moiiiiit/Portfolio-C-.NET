@@ -9,5 +9,8 @@ namespace portfolio_backend.data{
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Project> Project { get; set; }
+        public DbSet<Experience> Experience { get; set; }
+        public DbSet<Identifier> Identifier { get; set; }
     }
 }
