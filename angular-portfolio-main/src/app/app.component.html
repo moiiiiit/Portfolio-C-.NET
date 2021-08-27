@@ -1,0 +1,19 @@
+<nb-layout center>
+    <nb-layout-header fixed withScroll class="main-navbar">
+        <div class="header-container hidden-print">
+            <div class="logo-container">
+                <nb-user class='user-profile' name={{userprofile.name}} title={{userprofile.maintitle}}></nb-user>
+            </div>
+        </div>
+
+        <div class="another-header">
+            <ng-container #actionscontainer></ng-container>
+        </div>
+    </nb-layout-header>
+
+    <nb-layout-column>
+        <ng-container #menucontainer></ng-container>
+        <router-outlet></router-outlet>
+    </nb-layout-column>
+
+</nb-layout>
