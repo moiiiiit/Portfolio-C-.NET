@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using portfolio_backend.models;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace portfolio_backend.data
 {
@@ -10,7 +11,8 @@ namespace portfolio_backend.data
     {
         private readonly PortfolioContext _context;
 
-        public PortfolioRepoClass(PortfolioContext context){
+        public PortfolioRepoClass(PortfolioContext context)
+        {
             _context = context;
         }
         public SortedList<int, int> mock(int userid)
@@ -23,18 +25,27 @@ namespace portfolio_backend.data
             return (mockery);
         }
 
-        public User GetUser(string name)
+        public User GetUser(int userid)
         {
-            return _context.Users.FirstOrDefault(p => p.name==name);
+            return _context.Users.FirstOrDefault(p => p.userid == userid);
+
         }
-        public Project[] GetProjects(int userid){
-            return _context.Project.Where(x=> x.userid == userid).ToArray();
+        public int GetUser(string name)
+        {
+            return _context.Users.Where(p => p.name == name).Select(x => x.userid).FirstOrDefault();
+
         }
-        public Experience[] GetExperiences(int userid){
-            return _context.Experience.Where(x=> x.userid == userid).ToArray();
+        public Project[] GetProjects(int userid)
+        {
+            return _context.Project.Where(x => x.userid == userid).ToArray();
         }
-        public Identifier[] GetIdentifiers(int userid){
-            return _context.Identifier.Where(x=> x.userid == userid).ToArray();
+        public Experience[] GetExperiences(int userid)
+        {
+            return _context.Experience.Where(x => x.userid == userid).ToArray();
+        }
+        public Identifier[] GetIdentifiers(int userid)
+        {
+            return _context.Identifier.Where(x => x.userid == userid).ToArray();
         }
     }
 }
